@@ -84,9 +84,12 @@ const Navbar = () => {
           <i className="bi bi-person-badge"></i>
           <p>Colaboradores</p>
         </button>
+
         </a>
-        <button 
-          id='finances' 
+
+        <a href='/financeiro'>
+          <button 
+          id='financeiro' 
           className={`flex gap-6 transition-colors duration-100 ${
             isActive('/financeiro') ? 'text-black font-semibold' : 'text-gray-600 hover:text-black'
           }`}
@@ -94,6 +97,9 @@ const Navbar = () => {
           <i className="bi bi-cash"></i>
           <p>Financeiro</p>
         </button>
+        </a>
+
+
         <button 
           id='stock' 
           className={`flex gap-6 transition-colors duration-100 ${

@@ -123,24 +123,27 @@ const Agendamentos = () => {
                       handleRegister(e);
                     }}>
                       {/* dados pessoais */}
+                      {/* Input */}
                       <input 
                         type="text" 
                         placeholder="Nome do Colaborador" 
                         className="border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:border-orange-600"
                       />
+                      {/* Input */}
                       <div className='flex gap-2 justify-between'>
                         <InputMask
                           mask="999.999.999-99"
                           placeholder="CPF"
                           className="border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:border-orange-600"
-                        />
-
+                        />                        
+                        {/* Input */}
                         <InputMask 
                           mask={"(99)\\99999-9999"}
                           placeholder='Telefone'
                           className="border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:border-orange-600"                          
                         />  
                       </div>
+                      {/* Input */}
                       <input
                         type="email"
                         placeholder="Email"
@@ -150,6 +153,7 @@ const Agendamentos = () => {
                       
                       {/* cargo e departamento*/}
                       <div className='flex flex-1 justify-between'>
+                        {/* Input */}
                         <input 
                           type='text'
                           placeholder='Cargo'
@@ -176,6 +180,7 @@ const Agendamentos = () => {
                                 <option>Em Análise</option>
                                 <option>Demitido</option>
                         </select>
+                        {/* Input */}
                         <input 
                           type='text'
                           placeholder='Salário'
@@ -236,8 +241,6 @@ const Agendamentos = () => {
                 </div>
               </div>
               <div className="bg-orange-600 text-white flex items-center justify-center">Exemplo</div>
-              <div className="bg-orange-600 text-white flex items-center justify-center">3</div>
-              <div className="bg-orange-600 text-white flex items-center justify-center">3</div>
             </div>
           </section>
       </main>
